@@ -1,0 +1,123 @@
+/* ===== RESET ===== */
+*{margin:0;padding:0;box-sizing:border-box}
+
+/* ===== LAYOUT GERAL ===== */
+body{
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+  background-color: #fede5a;
+  font-family:"Segoe UI",sans-serif;
+}
+
+/* ===== LOGO ===== */
+header{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-image: url(https://i.imgur.com/gnjL8PB.jpeg);
+  background-size: cover;      /* cobre toda a área */
+  background-position: center; /* centraliza a imagem */
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 40px 20px;          /* dá respiro interno */
+}
+header img{
+  max-width:400px;
+  margin-top: -20px;
+  width:100%;
+  height:auto;
+  transition:transform .6s ease;
+}
+header img:hover{
+  transform:scale(1.05);
+}
+
+/* ===== ANIMAÇÃO ===== */
+@keyframes fadeIn{
+    from{opacity:0;transform:translateY(20px)}
+    to{opacity:1;transform:translateY(0)}
+  }
+
+/* ===== TABELA ===== */
+.tabela{
+  display:grid;
+  grid-template-rows: repeat(1fr);
+  width:100%;
+  max-width:800px;
+  border-radius:12px;
+  overflow:hidden;
+  animation:fadeIn .8s ease-in-out;
+  margin: auto auto 80px auto;
+}
+.tabela>div{
+   place-items: center;
+  padding:18px 8px;
+  background:#fff;
+  border-bottom:1px solid #e5e5e5;
+  transition: .3s,color .3s;
+}
+/* Cabeçalho */
+.tabela .header{
+  background:#8abcff;
+  text-align: center;
+  color:#0648a9;
+  font-weight:600;
+  text-transform:uppercase;
+  word-spacing: 2px;
+  letter-spacing:.50px;
+}
+
+.ranking-item{
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.ranking-list{
+    display: grid;
+    place-items: left;
+    word-spacing: 50px;
+    padding: auto;
+    grid-template-rows: (6, 0.5fr);
+    color: #1d1d1d;
+    
+}
+
+
+
+
+
+/* ===== FOOTER ===== */
+.footerdps {
+  width: 100%;
+  background: #f5d450;
+  color: #2e2e2e;
+  text-align: center;
+  padding: 15px 20px;
+  margin-top: auto;
+}
+.footerdps div {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.text{
+    color: #476ea0;
+text-align: justify;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 14.5px;
+  letter-spacing:.9px;
+  background-color: transparent;
+  text-align: center;
+  margin-top: auto;
+  padding-block-end: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}

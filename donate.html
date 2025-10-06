@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Placar: Doação de Brinquedos</title>
+<link rel="stylesheet" href="styledonate.css">
+<link rel="shortcut icon" href="https://i.imgur.com/NL9RYod.png" type="image/x-icon">
+<script src="scriptdonate.js"></script>
+</head>
+<body onload="carregaRankingConsulta();">
+
+<!-- Cabeçalho -->
+<header>
+  <img src="https://i.imgur.com/5JVU7ex.png" alt="Logo da Arrecadação de Brinquedos">
+</header>
+
+<body onload="carregaRankingConsulta();">
+
+    <!-- Placar -->
+  <div class="text">
+  <p style="font-size: 16px;">A escola E.E. Amácio Mazzaropi está realizando uma <p style="letter-spacing: 2px; word-spacing: 12px; font-size: 16px;"><strong> gincana de arrecadação de brinquedos.</strong></p> <br> Confira agora mesmo o placar com a quantidade de brinquedos já arrecadados em cada classe:</p>
+  </div>
+  <div class="tabela" id="placar" id="rankingContainerConsulta" id="mainContainer">
+    <div class="header">Placar - Doação de Brinquedos</div>
+  
+    <div id="mainContainer">
+      
+      <div id="rankingContainerConsulta">
+        <p>Carregando ranking de doações...</p>
+    </div>
+      </div>
+  </div> 
+
+  <!-- Footer -->
+<section class="footerdps">
+  <div>
+    &copy; 2025 E.E. Amácio Mazzaropi. Todos os direitos reservados.<br>
+    Desenvolvido pelos professores Luiza e Mauro junto aos alunos do Curso Técnico em Desenvolvimento de Sistemas: 2°DS
+  </div>
+</section>
+
+  <!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  
+<script src="consultaScript.js"></script>
+
+</body>
+</html>
